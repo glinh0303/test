@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Register">
+    <meta name="description" content="">
+    <title>Register</title>
+    <link rel="stylesheet" href="../static/nicepage.css" media="screen">
+    <link rel="stylesheet" href="../static/Register.css" media="screen">
+<!--    <script class="u-script" type="text/javascript" src="../static/jquery.js" defer=""></script>-->
+<!--    <script class="u-script" type="text/javascript" src="../static/nicepage.js" defer=""></script>-->
+    <meta name="generator" content="Nicepage 4.21.5, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+
+
+    <script type="application/ld+json">{
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "",
+        "logo": "images/logo.PNG"
+    }</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Register">
+    <meta property="og:type" content="website">
+</head>
+<body class="u-body u-xl-mode" data-lang="en">
+<header class="u-clearfix u-header u-header" id="sec-3b02">
+    <div class="u-clearfix u-sheet u-sheet-1">
+        <a href="/home" class="u-image u-logo u-image-1" data-image-width="985" data-image-height="132">
+            <img src="../static/images/logo.PNG" class="u-logo-image u-logo-image-1">
+        </a>
+        <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1" data-responsive-from="MD">
+            <div class="menu-collapse" style="font-size: 1.5rem; letter-spacing: 0px; font-weight: 700;">
+                <a class="u-button-style u-custom-border u-custom-border-color u-custom-borders u-custom-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link"
+                   href="#" style="padding: 0px 4px; font-size: calc(1em + 0px);">
+                    <svg class="u-svg-link" viewBox="0 0 24 24">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-0f49"></use>
+                    </svg>
+                    <svg class="u-svg-content" version="1.1" id="svg-0f49" viewBox="0 0 16 16" x="0px" y="0px"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <rect y="1" width="16" height="2"></rect>
+                            <rect y="7" width="16" height="2"></rect>
+                            <rect y="13" width="16" height="2"></rect>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div class="u-custom-menu u-nav-container">
+                <ul class="u-nav u-spacing-20 u-unstyled u-nav-1">
+                    <li class="u-nav-item"><a
+                            class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-1-base"
+                            href="/home" style="padding: 10px;">Home</a>
+                    </li>
+                    <li class="u-nav-item"><a
+                            class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-1-base"
+                            href="/about" style="padding: 10px;">About</a>
+                    </li>
+                    <li class="u-nav-item"><a
+                            class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-1-base"
+                            href="/login" style="padding: 10px;">Login</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="u-custom-menu u-nav-container-collapse">
+                <div class="u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav u-white">
+                    <div class="u-inner-container-layout u-sidenav-overflow">
+                        <div class="u-menu-close"></div>
+                        <ul class="u-align-center u-nav u-popupmenu-items u-text-hover-palette-1-light-2 u-text-palette-1-base u-unstyled u-nav-2">
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="/home">Home</a>
+                            </li>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="/about">About</a>
+                            </li>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="/login">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+            </div>
+        </nav>
+    </div>
+</header>
+<section class="u-clearfix u-palette-1-base u-section-1" id="sec-b0ed">
+    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="u-border-3 u-border-grey-40 u-container-style u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-group u-white u-group-1">
+            <div class="u-container-layout u-container-layout-1">
+                <h1 class="u-text u-text-default u-text-palette-1-base u-text-1">Register</h1>
+                <div class="u-form u-form-1">
+                    <form action=""
+                          class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="email" name="form"
+                          style="padding: 10px;" redirect="true", method="post">
+                        {{ form.hidden_tag() }}
+<!--                        <div class="u-form-group">-->
+<!--                            <label for="email-25c7" class="u-label">First Name</label>-->
+<!--&lt;!&ndash;                            <input type="text" placeholder="Enter your First Name" id="email-25c7" name="firstName"&ndash;&gt;-->
+<!--&lt;!&ndash;                                   class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white"&ndash;&gt;-->
+<!--&lt;!&ndash;                                   required="required">&ndash;&gt;-->
+<!--                            -->
+<!--                        </div>-->
+<!--                        <div class="u-form-group u-form-name">-->
+<!--                            <label for="name-25c7" class="u-label">Last Name</label>-->
+<!--                            <input type="text" placeholder="Enter your Last Name" id="name-25c7" name="lastName"-->
+<!--                                   class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">-->
+<!--                        </div>-->
+                        <div class="u-form-group u-form-group-3">
+                            <label class="u-label">Username</label>
+<!--                            <input type="text" id="text-e42d" name="userName"-->
+<!--                                   class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white"-->
+<!--                                   placeholder="Enter Username" required="required">-->
+                            {{ form.username( class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white") }}
+                        </div>
+                        <div class="u-form-group u-form-group-4">
+                            <label class="u-label">Password</label>
+<!--                            <input type="text" placeholder="Enter password" id="text-9023" name="password"-->
+<!--                                   class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white"-->
+<!--                                   required="required">-->
+                            {{ form.password(class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white") }}
+                        </div>
+                        <div class="u-form-email u-form-group u-form-group-5">
+                            <label class="u-label">Email</label>
+<!--                            <input type="email" placeholder="Enter your Email" id="text-81f3" name="email"-->
+<!--                                   class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white"-->
+<!--                                   required="required">-->
+                            {{ form.email( class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white") }}
+                        </div>
+                        <div class="u-form-group u-form-phone u-form-group-6">
+                            <label class="u-label">Phone</label>
+<!--                            <input type="tel" placeholder="Enter phone number" id="text-78e6" name="phone"-->
+<!--                                   class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white"-->
+<!--                                   required="required">-->
+                            {{ form.phone(class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white") }}
+                        </div>
+<!--                        <div class="u-form-group u-form-group-7">-->
+<!--                            <label for="text-d4ea" class="u-label">Address</label>-->
+<!--                            <input type="text" placeholder="Enter Address" id="text-d4ea" name="address"-->
+<!--                                   class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white"-->
+<!--                                   required="required">-->
+<!--                        </div>-->
+                        <div class="u-align-left u-form-group u-form-submit">
+<!--                            <a href="#"-->
+<!--                               class="u-btn u-btn-submit u-button-style u-hover-palette-1-dark-1 u-palette-1-base u-btn-1">Register<br>-->
+<!--                            </a>-->
+<!--                            <input type="submit" value="submit" class="u-form-control-hidden">-->
+                            {{ form.submit( class="u-btn u-btn-submit u-button-style u-hover-palette-1-dark-1 u-palette-1-base u-btn-1") }}
+                        </div>
+                        <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent.
+                        </div>
+                        <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix
+                            errors then try again.
+                        </div>
+                        <input type="hidden" value="" name="recaptchaResponse">
+                        <input type="hidden" name="formServices" value="8676390ab9e68b96c79476a5ce512909">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="u-align-center u-clearfix u-footer u-white u-footer" id="sec-a1bf">
+    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h5 class="u-text u-text-palette-1-dark-1 u-text-1">Copyright © 2022 SkinCancerDetection</h5>
+    </div>
+</footer>
+<section class="u-backlink u-clearfix u-grey-80">
+    <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
+        <span>Website Templates</span>
+    </a>
+    <p class="u-text">
+        <span>created with</span>
+    </p>
+    <a class="u-link" href="" target="_blank">
+        <span>Website Builder Software</span>
+    </a>.
+</section>
+
+</body>
+</html>
